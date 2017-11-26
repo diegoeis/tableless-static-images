@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>tables</title>
+	
+	<style type="text/css" media="screen">
+	a {
+		color: white;
+	}
+	table {
+		border: 1px solid black;
+		font: 12px verdana, arial;
+	}
+	
+	table thead {
+		background: gray;
+		color: white;
+	}
+	
+	table tfoot {
+		background: gray;
+		color: white;
+	}
+	
+	table tr th {
+		border: 1px solid black;
+		padding: 5px;
+	}
+	table tr td {
+		border: 1px solid black;
+		padding: 5px;
+	}
+	
+	table tbody tr:nth-child(2n+1) {
+		background: lightgray;
+	}
+	
+	</style>
+	
+</head>
+
+<body>
+
+<table summary="Estudo sobre NTH-CHILD" cellspacing="0" cellpadding="0">
+	
+	<thead>
+		<tr>
+			<th>Produto</th>
+			<th>Tamanho</th>
+			<th>Cor</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="3">Estudo sobre a pseudo-classe nth-child: <br /><a href="http://www.tableless.com.br/nth-child">http://www.tableless.com.br/nth-child</a></td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>Camiseta</td>
+			<td>GG</td>
+			<td>Vermelha</td>
+		</tr>
+		<tr>
+			<td>Sapato</td>
+			<td>43</td>
+			<td>Preto</td>
+		</tr>
+		<tr>
+			<td>Camiseta</td>
+			<td>GG</td>
+			<td>Vermelha</td>
+		</tr>
+		<tr>
+			<td>Sapato</td>
+			<td>43</td>
+			<td>Preto</td>
+		</tr>
+		<tr>
+			<td>Tênis</td>
+			<td>42</td>
+			<td>Branco</td>
+		</tr>
+		<tr>
+			<td>Bermuda</td>
+			<td>56</td>
+			<td>Azul</td>
+		</tr>
+		<tr>
+			<td>Camiseta</td>
+			<td>GG</td>
+			<td>Vermelha</td>
+		</tr>
+		<tr>
+			<td>Sapato</td>
+			<td>43</td>
+			<td>Preto</td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+</html>

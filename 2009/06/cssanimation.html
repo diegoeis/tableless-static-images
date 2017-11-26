@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Teste com CSS Animation - Tableless.com.br</title>
+<meta name="description" content="Exemplo de como utilizar o CSS Animation e CSS transform. Tableless.com.br é um portal de informação sobre desenvolvimento e boas práticas com Padrões Web." />	
+	<style type="text/css" media="screen">
+		
+		p {
+			padding: 10px;
+			font: 13px verdana;
+		}
+		
+		div {
+			margin: 50px;
+			float: left;
+		}
+		
+		.div1 {
+			border: 10px solid black;
+			width: 250px;
+			height:250px;
+			background:lightgray;
+			-webkit-transform: rotate(0deg);
+	   		-webkit-transition: background 1s linear, -webkit-transform 0.5s linear;
+		}
+		
+		.div1:hover {
+			background: red;
+			width: 250px;
+			-webkit-transform: rotate(-360deg);
+		}
+		
+		.div2 {
+			border: 10px solid black;
+			width: 250px;
+			height:250px;
+			background:lightgray;
+	   		-webkit-transition: border 0.5s linear, -webkit-border-radius 0.5s linear;
+		}
+		
+		.div2:hover {
+			border: 20px solid black;
+			-webkit-border-radius: 20px;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+	<div class="div1">
+		<p>Testando css animations!</p>
+		<p>Faça Aula Particular conosco: http://visie.com.br/</p>
+	</div>
+
+	<div class="div2">
+		<p>Testando css animations!</p>
+		<p>Treine sua equipe: http://visie.com.br/</p>
+	</div>
+
+</body>
+</html>

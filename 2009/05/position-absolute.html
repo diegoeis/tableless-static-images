@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>untitled</title>
+	
+	<style type="text/css" media="screen">
+		.pai {
+			border: 1px solid #0AB4E2;
+			position: relative; /** por causa deste position, o div filho irá referenciar sua posição pelo div pai. **/
+			width: 400px;
+			height: 400px;
+			padding: 15px;
+		}
+		
+		.filho {
+			border: 1px solid black;
+			width: 311px;
+			position: absolute;
+			bottom: 5px;
+			right: 5px;
+		}
+		
+		.filho p {
+			color: red;
+			font: 14px arial, verdana;
+		}
+
+	</style>
+	
+</head>
+
+<body>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere eros vel risus varius et euismod dui tincidunt. Nulla et ipsum sem, eget pellentesque dolor. Suspendisse vel tellus nisi. Sed tincidunt adipiscing venenatis. Integer vestibulum nibh sed quam aliquet tincidunt. Mauris vel congue neque. Sed leo lectus, vulputate sed varius id, pellentesque at quam. Pellentesque tortor nisl, vestibulum ut rutrum 
+</p>
+
+<div class="pai">
+	<div class="filho">
+		<p>O elemento com position absolute se referencia pelo ponto superior esquerdo do elemento pai mais próximo que contenha também uma propriedade position relative ou absolute. Neste caso, a posição deste elemento se referenciaria pelo div com borda azul.</p>
+	</div>
+</div>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere eros vel risus varius et euismod dui tincidunt. Nulla et ipsum sem, eget pellentesque dolor. Suspendisse vel tellus nisi. Sed tincidunt adipiscing venenatis. Integer vestibulum nibh sed quam aliquet tincidunt. Mauris vel congue neque. Sed leo lectus, vulputate sed varius id, pellentesque at quam. Pellentesque tortor nisl, vestibulum ut rutrum 
+</p>
+
+</body>
+</html>

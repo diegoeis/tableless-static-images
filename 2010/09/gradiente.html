@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Gradiente</title>
+	<style>
+		
+		* {margin:0; padding:0;}
+		p {
+			color: #fff;
+			height: 200px;
+			padding: 10px;
+			width:200px;
+			margin:30px auto;
+			border:1px solid #CCC;
+		}
+	 	p.linear {
+			/* Para Mozilla/Gecko (Firefox etc) */
+			background: -moz-linear-gradient(top, #666, #fff) repeat-X;
+
+			/* Para WebKit (Safari, Google Chrome etc) */
+			background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#fff)) repeat-X;
+
+			/* Para IE 8 */
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#666, endColorstr=#FFFFFFFF)";
+
+			/* Para IE 5.5 - 7 */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#666, endColorstr=#FFFFFFFF);
+
+
+		}
+		p.radial {
+			/* Para Mozilla/Gecko (Firefox etc) */
+			background: -moz-radial-gradient(40% 40%, farthest-side, #666, #FFF) repeat-X;
+
+			/* Para WebKit (Safari, Google Chrome etc) */
+			background: -webkit-gradient(radial, 20% 20%, 20, 20% 20%, 60, from(#666), to(#FFF)) repeat-X;
+
+		}
+	</style>
+	
+</head>
+<body>
+	<p class="linear">
+		Gradiente Linear!<br>
+		<a href="http://tableless.com.br/">http://tableless.com.br/</a>
+	</p>
+	<p class="radial">
+		Gradiente Linear!<br>
+		<a href="http://tableless.com.br/">http://tableless.com.br/</a>
+	</p>
+</body>
+</html>

